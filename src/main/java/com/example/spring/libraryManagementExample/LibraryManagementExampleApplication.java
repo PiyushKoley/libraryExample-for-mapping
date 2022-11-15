@@ -33,7 +33,7 @@ public class LibraryManagementExampleApplication implements CommandLineRunner {
 
 		int amount = student.getCard().getFine();
 
-		cardRepository.save(card);
+//		cardRepository.save(card);
 		studentRepository.save(student);
 
 	}

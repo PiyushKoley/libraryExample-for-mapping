@@ -21,6 +21,10 @@ public class Card {
     @UpdateTimestamp
     private Date updatedOn;
 
+    @OneToOne
+    @JoinColumn
+    private Student student;
+
     public Card() {
     }
 

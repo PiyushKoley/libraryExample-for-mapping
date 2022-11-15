@@ -17,8 +17,8 @@ public class Student {
     private String country;
     private int age;
 
-    @OneToOne
-    @JoinColumn
+    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn
     private Card card;
 
     @CreationTimestamp
